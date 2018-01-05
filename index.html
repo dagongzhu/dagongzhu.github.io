@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明德妙融粉扑欢迎您！</title>
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+		.swiper-container {
+			margin-bottom:100px;
+		    width: 100%;
+		    min-width: 1200px;
+		    height: 460px;
+		}  
+		.swiper-slide>img{
+			width:100%;
+			height:460px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+	</div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <!-- <div class="swiper-slide">
+				<img src="./images/banner.png" alt="">
+	        </div> -->
+	        <div class="swiper-slide">
+				<img src="./images/brand3.png" alt="">
+	        </div>
+	        <div class="swiper-slide">
+				<img src="./images/banner1.png" alt="">
+	        </div>
+	        <div class="swiper-slide">
+				<img src="./images/banner2.png" alt="">
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<!-- <div class="banner">
+		<img src="./images/banner.png" alt="">
+	</div> -->
+	<div class="section section1">
+		<div class="text_cont">
+			<h3>INSPIRATION <span>创作灵感</span></h3>
+			<p>美妙的事情总是发生在不经意间，而细节早已决定了这些看起来偶然的美好。蝴蝶效应从来就没有停止过它的发生……明德妙融深知，影响上妆效果最大的不是粉底液、不是皮肤本身，而是处于这两者之间的媒介——气垫粉扑。</p>
+		</div>
+		<div class="line"></div>
+		<div class="img_box">
+			<img src="./images/4.png" alt="">
+		</div>
+		<div class="img1">
+			<img src="./images/2.png" alt="">
+		</div>
+		<div class="img2">
+			<img src="./images/3.png" alt="">
+		</div>
+	</div>
+
+	<div class="section2">
+		<h3>LIGHT THIN OF ART <span>轻薄艺术</span></h3>
+		<p>轻薄是一种态度，是似有若无的神秘，轻薄更是一种极致，以0.6cm的姿态，住进每一个与之相遇的气垫盒，和谐相融，万物归一。</p>
+	</div>
+
+	<div class="section section3">
+		<div class="img_box1">
+			<img src="./images/1.jpg" alt="">
+		</div>
+		<div class="line"></div>
+		<div class="img_box2">
+			<img src="./images/star.png" alt="">
+		</div>
+		<div class="text_box">
+			<h3>轻抹 · 一显出色</h3>
+			<p>妙心随 巧融美</p>
+			<p>没有一场美丽 无法实现</p>
+			<p>There is no beauty Unable to realize</p>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script>
+		window.onload=function(){
+			var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    
+		    // 如果需要分页器
+		    autoplay : 3000,
+		    pagination: '.swiper-pagination',
+		    autoplayDisableOnInteraction : false, 
+		  })        
+		}
+	</script>
+	<script>
+		$(function(){
+			$(".nav>li:nth-child(1)>a").addClass('current');
+		})
+	</script>
+</body>
+</html>
